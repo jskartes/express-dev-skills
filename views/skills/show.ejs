@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+
+<p>Confidence level:</p>
+<h2><%= skill.level %> / 10</h2>
+
+<form
+  action='/skills/<%= skill.id %>?_method=DELETE'
+  method='POST'
+  style='display: inline'
+>
+  <button type='submit'>Delete Skill</button>
+</form>
+
+<%- include('../partials/footer') %>
